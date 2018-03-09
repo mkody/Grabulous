@@ -6,31 +6,19 @@ bot: the user ID of the bot performing the downloads
 root: the base folder for saving things; choose what you want, otherwise it will use the bot run location
 
 #init
-token: NDEwMjc4NDQ0MzA4MzY1MzE0.DVq2LA.mhD-TDgQ_pOLHrks7zrxlLD3wiI
+token: 
 pre: -
-bot: 297840101944459275
-root: X:\! Python\Grabulous
+bot: 
+root: 
 
 #permission
 / Add any user's ID number which you would like to have access to grab functions
 / This will download files to YOUR computer - it is recommended that only YOU have permission
-151542934892707840
+000000000
+000000001
 
 #template
 server
 name
 bookmark
 failsafe
-
-#297468195026239489
-server: Hollow Knight
-name: meme
-bookmark
-failsafe: 409919046285524992
-
-#364490224925147146
-server: g a m e
-name: test
-bookmark: 416738629579309057
-failsafe
-
