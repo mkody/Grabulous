@@ -1,5 +1,4 @@
 #README
-token: the bot's application token
 pre: the prefix used to access the command; traditionally -
 server: the id of the server, which guarantees the bot is only run there
 bot: the user ID of the bot performing the downloads
