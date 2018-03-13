@@ -12,6 +12,7 @@ print("#     by Conrad     #")
 print("#####################")
 print()
 
+cfg = Index.open(os.getcwd() + "\\config.cxr")
 grab = Bot(command_prefix=cfg["init"]["pre"])
 grab.remove_command("help")
 
