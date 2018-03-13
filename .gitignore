@@ -140,4 +140,11 @@ $RECYCLE.BIN/
 
 # JetBrains files
 .idea
+
+# Miscellaneous
 my_config.cxr
+test
+/!python
+/!start_grab.bat
+inf.py
+

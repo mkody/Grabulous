@@ -4,6 +4,7 @@ from qoid import Qoid, Index
 from auxiliary import discord_sanitize_arguments as sanitize
 import requests
 import os
+from inf import token
 
 print("#####################")
 print("# Grabulous.discord #")
@@ -11,7 +12,7 @@ print("#     by Conrad     #")
 print("#####################")
 print()
 
-cfg = Index.open(os.getcwd() + "\\config.cxr")
+cfg = Index.open(os.getcwd() + "\\my_config.cxr")  # Change this line to config.cxr!!
 grab = Bot(command_prefix=cfg["init"]["pre"])
 grab.remove_command("help")
 
@@ -25,6 +26,7 @@ elif os.path.isfile(cfg["init"]["root"]):
     cfg["init"]["root"] = ("root", cfg["init"]["root"] + "-grabulous")
     os.mkdir(cfg["init"]["root"])
     cfg.save()
+
 
 # Decorator beneath Client.command()
 def check(f):
@@ -62,7 +64,6 @@ async def on_ready():
 @grab.command(name="grab", pass_context=True)
 @check
 async def grabulate(ctx, *args):
-
 
     # Step 1: Get channels
     channels = [e for e in args if isinstance(e, Channel)]
@@ -141,4 +142,4 @@ async def grabulate(ctx, *args):
 
 print(f"Initializing Grabulous in {cfg['init']['root']}")
 
-grab.run(cfg["init"]["token"])
+grab.run(token())
