@@ -1,24 +1,18 @@
 #README
 / Fill out the data in #init using the descriptions here!
-token: the bot's application token. Keep it secret, keep it safe.
 pre: the prefix used to access the command; traditionally -
-server: the id of the server, which guarantees the bot is only run there
-bot: the user ID of the bot performing the downloads
 root: the base folder for saving things; choose what you want, otherwise it will use the bot run location
 
 #init
-token
 pre: -
-bot
 root:
 
 #permission
 / Add your discord user ID(s) here so that only YOU can activate this bot.
-/ Since it's self-hosted, all files will download to your personal computer.
-/ It's very important that only you can initiate this process!
 000000000000000000000
 
 #template
+/ Don't mess with this! It's exactly how it should be.
 server
 name
 bookmark
