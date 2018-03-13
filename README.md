@@ -30,10 +30,9 @@ Grabulous is a **self-hosted** bot; it only runs when you want it to, and it run
 
 ### Part 2: Setting up a Discord bot
 4. [Create a Discord Bot, get an application token, and add the bot to your server](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
-5. Create a file called `inf.py` and add the following (make sure to include the line break!):
+5. Create a file called `inf.py` and add the following line *followed by a line break*:
 ```python
 def token(): return "Replace this text with your application token"
-
 ```
 
 ### Part 3: Customizing the config.cxr file
