@@ -65,6 +65,7 @@ root: C:\path\to\download\location
 -grab                               downloads images from the channel which the command was posted in
 -grab #channel                      downloads images from the tagged channel
 -grab #channel1 #channel2 ...       downloads images from all tagged channels
+```
 
 ### Part 5: Support this bot on Patreon!
 
