@@ -4,7 +4,7 @@ A Discord py bot for Windows which downloads a channel's images. How convenient!
 ## Requirements
 
 * [Python 3.4.2+](https://www.python.org/downloads/) with `pip`
-    * The bot was tested up to Python 3.7.0
+    * The bot will NOT WORK with python 3.7.0. Use pyenv if needed (latest compatible version: 3.6.6).
 
 ## About the Bot
 
