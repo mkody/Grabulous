@@ -614,7 +614,7 @@ class Index:
 
     @staticmethod
     def open(path: str):
-        path = path.replace("/", "\\")
+#        path = path.replace("/", "\\")
         if os.path.isfile(path):
             with open(path, "r") as f:
                 mode = "." + path.rsplit(".", 1)[1]
@@ -625,7 +625,7 @@ class Index:
                     source = json.load(fp=f)
                 else:
                     raise QoidError("incompatible file type; must be cxr, txt, or json")
-                tag = path.split("\\")[-1].rsplit(".", 1)[0]
+                tag = path.split("/")[-1].rsplit(".", 1)[0]
                 out = Index.parse(source, tag=tag)
                 out.mode = mode
                 out.path = path
@@ -972,16 +972,16 @@ class Register:
 
     @staticmethod
     def open(path: str):
-        path = path.replace("/", "\\")
+#        path = path.replace("/", "\\")
         if os.path.isdir(path):
-            out = Register(tag=path.split("\\")[-1])
-            out.path = path.rsplit("\\", 1)[0]
+            out = Register(tag=path.split("/")[-1])
+            out.path = path.rsplit("/", 1)[0]
             for e in os.listdir(path):
                 try:
-                    i = Index.open(path + "\\" + e)
+                    i = Index.open(path + "/" + e)
                     out += i
                 except QoidError as qe:
-                    print(f"Ignoring non-qoid at {path}\\{e}")
+                    print(f"Ignoring non-qoid at {path}/{e}")
             return out
         else:
             raise NotADirectoryError(f"Invalid source specified: {path}")

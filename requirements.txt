@@ -1,0 +1,7 @@
+aiohttp
+async_timeout
+chardet
+discord.py
+multidict
+requests
+websockets

@@ -142,7 +142,8 @@ $RECYCLE.BIN/
 .idea
 
 # Miscellaneous
-my_config.cxr
+config.cxr
 test
 /!python
 inf.py
+

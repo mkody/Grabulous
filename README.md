@@ -1,16 +1,10 @@
 # Grabulous
 A Discord py bot for Windows which downloads a channel's images. How convenient!
 
-### Requirements
-* [Python 3.4.2+](https://www.python.org/downloads/)
-* [aiohttp](https://github.com/aio-libs/aiohttp/releases/latest)
-* [async_timeout](https://github.com/aio-libs/async-timeout/releases/latest)
-* [chardet](https://github.com/chardet/chardet/releases/latest)
-* [discord.py](https://github.com/Rapptz/discord.py/releases/tag/v0.16.12)
-* [multidict](https://github.com/aio-libs/multidict/releases/latest)
-* qoid.py (a stable version is included in this repo)
-* [requests](https://pypi.python.org/pypi/requests#downloads)
-* [websockets](https://github.com/Lawouach/WebSocket-for-Python/releases/tag/0.4.2)
+## Requirements
+
+* [Python 3.4.2+](https://www.python.org/downloads/) with `pip`
+    * The bot was tested up to Python 3.7.0
 
 ## About the Bot
 
@@ -22,11 +16,11 @@ Grabulous is a **self-hosted** bot; it only runs when you want it to, and it run
 
 ## How to do it
 
-### Part 1: Setting up Python
-0. Install Python!
-1. Download this repo and unzip `Grabulous-master` where you want
-2. Create a folder called `!python` inside `Grabulous-master`
-3. Download and unzip the rest of the requirements into `!python`
+### Part 1: Setting up project
+1. Install Python!
+2. Clone or download this repo and unzip `Grabulous-master` where you want
+3. Run `pip install -r requirements.txt` to install dependencies
+    * You can ignore the dependencies errors from `discord-py`, it works fine for now.
 
 ### Part 2: Setting up a Discord bot
 4. [Create a Discord Bot, get an application token, and add the bot to your server](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
@@ -54,19 +48,18 @@ You will be adding to these files
 8. Paste your User ID under `#permissions` in place of the long string of 0s.
 9. If there is a different folder or file path where you want images to download (such as a local Google Drive folder) then change the value of root under `#init` like so:
 ```
-root: C:\path\to\download\location
+root: /path/to/download/location
 ```
 
 ### Part 4: Running the bot
-10. Open `!start_grab.bat`
+10. Run the bot with `python grabulous.py`
 11. In Discord, type one of the commands below to begin downloading images:
 ```
-
 -grab                               downloads images from the channel which the command was posted in
 -grab #channel                      downloads images from the tagged channel
 -grab #channel1 #channel2 ...       downloads images from all tagged channels
 ```
 
-### Part 5: Support this bot on Patreon!
+### Part 5: Support this bot on (the original) Patreon!
 
-If you appreciate what this bot does, consider pledging to my [Patreon](https://www.patreon.com/complexor)! Every bit makes a difference.
+If you appreciate what this bot does, consider pledging to the __upstream__ [Patreon](https://www.patreon.com/complexor)! Every bit makes a difference.
